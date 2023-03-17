@@ -1,7 +1,7 @@
 {
   "devDependencies": {
-    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
     "@badeball/cypress-cucumber-preprocessor": "^15.1.4",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
     "cucumber": "^6.0.7",
     "cypress": "^12.7.0",
     "cypress-cucumber-preprocessor": "^4.3.1",
@@ -13,5 +13,9 @@
   },
   "env": {
     "webdriveruni_homepage": "http://www.webdriveruniversity.com"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/support/step_definitions"
   }
 }
